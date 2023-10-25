@@ -1,0 +1,13 @@
+<h1>11</h1>
+
+<h2 class="m-5 text-center">Lista Drink con la A</h2>
+
+<ul class="grid-container m-5">
+    <li class="card" *ngFor="let drink of drinks">
+        <img [src]="drink.strDrinkThumb" />
+        <h3>Coktail: {{drink.strDrink}}</h3>
+        <button>
+            <a routerLink="/detail"> Dettagli</a>
+        </button>
+    </li>
+</ul>
