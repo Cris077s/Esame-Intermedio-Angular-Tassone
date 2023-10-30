@@ -2,23 +2,30 @@
 
 <h2 class="m-5 text-center">Dettagli Del Cocktail</h2>
 
-<ul>
-    <li *ngFor="let drink of drinks">
+<ul *ngFor="let drink of drinks">
+    <li>
         <img [src]="drink.strDrinkThumb" />
         <h3>Coktail: {{drink.strDrink}}</h3>
-        <button>
-            <a routerLink="/home"> Home</a>
-        </button>
+        <h4>INGREDIENTS</h4>
     </li>
+    <li>{{drink.stringredient1}}</li>
+    <li>{{drink.stringredient2}}</li>
+    <li>{{drink.stringredient3}}</li>
+    <li>{{drink.stringredient4}}</li>
+
+    <button>
+        <a routerLink="/home"> Home</a>
+    </button>
 </ul>
 
-<div class="recipe-ingredients">
-    <h2>INGREDIENTS</h2>
+<!-- Errore di cors insensato prima funzionva non so cosa altro fare-->
+
+<!-- /*<div class="recipe-ingredients"> -->
+<!-- <h2>INGREDIENTS</h2>
     <ul>
         <li>1 oz Coconut Rum</li>
         <li>1/2 oz Amaretto</li>
         <li>4 oz Orange Juice</li>
         <li>1/2 oz Grenadine</li>
     </ul>
-</div>
-</div>
+</div> -->
