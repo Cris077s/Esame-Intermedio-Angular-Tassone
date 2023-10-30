@@ -2,23 +2,22 @@
 
 <h2 class="m-5 text-center">Dettagli Del Cocktail</h2>
 
-<ul *ngFor="let drink of drinks">
+<ul *ngFor="let drinks of drinks">
     <li>
-        <img [src]="drink.strDrinkThumb" />
-        <h3>Coktail: {{drink.strDrink}}</h3>
+        <h3>Coktail: {{drinks.strDrink}}</h3>
+        <img [src]="drinks.strDrinkThumb" />
         <h4>INGREDIENTS</h4>
     </li>
-    <li>{{drink.stringredient1}}</li>
-    <li>{{drink.stringredient2}}</li>
-    <li>{{drink.stringredient3}}</li>
-    <li>{{drink.stringredient4}}</li>
+    <li>{{drinks.strIngredient1}}</li>
+    <li>{{drinks.strIngredient2}}</li>
+    <li>{{drinks.strIngredient3}}</li>
+    <li>{{drinks.strIngredient4}}</li>
 
     <button>
         <a routerLink="/home"> Home</a>
     </button>
 </ul>
 
-<!-- Errore di cors insensato prima funzionva non so cosa altro fare-->
 
 <!-- /*<div class="recipe-ingredients"> -->
 <!-- <h2>INGREDIENTS</h2>

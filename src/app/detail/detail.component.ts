@@ -14,7 +14,7 @@ export class DetailComponent implements OnInit {
     ngOnInit(): void {
         this.http
             .get(
-                "http://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=15200"
+                "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=15200"
             )
             .subscribe((res: any) => {
                 console.log(res);
